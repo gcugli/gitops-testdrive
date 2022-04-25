@@ -1,4 +1,4 @@
-# Prepare a Git repository to GitOps
+# Prepare a Git repository for GitOps
 
 ## Prepare a Git repository with the application configurations
 
@@ -11,29 +11,49 @@ Go to the GIT server (GOGS) and create a new account with the user name given to
 GIT Server URL: [http://gogs.apps.cluster-6zrqg.6zrqg.sandbox500.opentlc.com/tgubeli/gitops-testdrive](http://gogs.apps.cluster-6zrqg.6zrqg.sandbox500.opentlc.com/tgubeli/gitops-testdrive)
 
 
-In the login forma clic in "Create a new account" link
+In the login form clic in "Create a new account" link
 
-![Create new account](../img/configuringC1.png "Create new account")
-
-Then, fill the form with your user name, email (can be a fake one) and password.
-
-![Create new account](../img/configuringC2.png "Create new account")
+<img src="../img/configuringC1.png" alt="Create new account" width="50%" height="50%"/>
 
 
+Next, fill the form with your user name, email (can be a fake one) and password. Then clic "Create a new account".
+
+<img src="../img/configuringC2.png" alt="New account form" width="50%" height="50%"/>
 
 
-Create the Role Binding with the next data:
-* Binding Type: Namespace Role Binding
-* Name: petclinic-gitops-userXY
-* Namespace: userXY-petclinic
-* Role: edit
-* Subject: Service Account
-* Subject Namespace: userXY
-* Subject Name: openshift-gitops-argocd-application-controller
+Then, you are ready to login into GOGS and start using it.
 
-![Deploying Application](../img/configuringB3.png "Deploying Application")
+<img src="../img/configuringC3.png" alt="New account form" width="50%" height="50%"/>
 
-The RoleBinding is created and GitOps get access to modify the components on the project
+
+Once you are already logged in, we need to create the GIT repo that will be our "Source of Truth" and will contain all the configurations associated to our application.
+In order to do that, we are going to clone/replicate an existing repo that already have that files.
+
+
+So first clic on the "Replica" tab in the upper right corner and then clic in the "+" button (will show the "New Replica" label as showed in the image bellow).
+
+<img src="../img/configuringC5.png" alt="Create a replica repo" width="50%" height="50%"/>
+
+
+Now we need to put the GIT URL that we want to clone and uncheck the "Migration type" option.
+Set all the values like this:
+
+* Clone URL: https://github.com/tgubeli/gitops-testdrive
+* Propietary: userXY
+* Visibility: uncheck
+* Migration type: uncheck
+
+<img src="../img/configuringC6.png" alt="Create a replica repo" width="50%" height="50%"/>
+
+Then clic "Migrate Repository".
+
+
+You are done with this step. We now have a GIT repo that Openshift GitOps is going to use later.
+
+<img src="../img/configuringC7.png" alt="Repo view" width="50%" height="50%"/>
+
+
+
 
 [Go to content](content.md)
 [Go to readme](../README.md)
