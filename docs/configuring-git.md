@@ -2,7 +2,9 @@
 
 ## Prepare a Git repository with the application configurations
 
-The configurations related to the application (K8s Deployments, Services, PVs, etc) will be stored on a Git repositiry called "gitops-testdrive". In order to take control over this GIT (make changes) we must be the owner or a collaborator. In this case we are going to clone (replicate) an axisting GIT repo with all the configurations and structure that we need for this exercise. We already have a GIT server deployed into Openshift, so you can create a new account and then clone the pre existing repo.
+The configurations related to the application (K8s Deployments, Services, PVs, etc) will be stored on a Git repository called "gitops-testdrive". In order to take control over this GIT (make changes) we must be the owner or a collaborator. In this case we are going to clone (replicate) an axisting GIT repo with all the configurations and structure that we need for this exercise. 
+
+We already have a GIT server deployed into Openshift, so you can create a new account and then clone the pre existing repo.
 
 ### Create a GIT account in GOGS
 
@@ -27,10 +29,10 @@ Then, you are ready to login into GOGS and start using it.
 
 
 Once you are already logged in, we need to create the GIT repo that will be our "Source of Truth" and will contain all the configurations associated to our application.
-In order to do that, we are going to clone/replicate an existing repo that already have that files.
+In order to do that, we are going to clone/replicate an existing repo that already have those files.
 
 
-So first clic on the "Replica" tab in the upper right corner and then clic in the "+" button (will show the "New Replica" label as showed in the image bellow).
+So first clic on the "Replica" tab in the upper right corner and then clic in the "+" button (it will show the "New Replica" label as showed in the image bellow).
 
 <img src="../img/configuringC5.png" alt="Create a replica repo" width="90%" height="90%"/>
 
