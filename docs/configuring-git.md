@@ -34,7 +34,7 @@ In order to do that, we are going to clone/replicate an existing repo that alrea
 
 So first clic on the "Replica" tab in the upper right corner and then clic in the "+" button (it will show the "New Replica" label as showed in the image bellow).
 
-<img src="../img/configuringC5.png" alt="Create a replica repo" width="90%" height="90%"/>
+<img src="../img/configuringC5.png" alt="Create a replica repo"/>
 
 
 Now we need to put the GIT URL that we want to clone and uncheck the "Migration type" option.
