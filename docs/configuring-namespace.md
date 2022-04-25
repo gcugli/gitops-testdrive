@@ -8,25 +8,25 @@ The application to deploy on Openshift will be stored on a project called petcli
 
 In the Home Menu, select projects option
 
-![Deploying Application](/img/configuringA1.png "Deploying Application")
+![Deploying Application](../img/configuringA1.png "Deploying Application")
 
 Then, select Create Project in the top-right side
 
-![Deploying Application](/img/configuringA2.png "Deploying Application")
+![Deploying Application](../img/configuringA2.png "Deploying Application")
 
 Use petclinic in the name and display name. *Note:* The name must be on lower case and only use (-) simbol
 
-![Deploying Application](/img/configuringA3.png "Deploying Application")
+![Deploying Application](../img/configuringA3.png "Deploying Application")
 
 ### Grant access to petclinic project 
 
 Go to RoleBindings section on *User Management* Menu
 
-![Deploying Application](/img/configuringB1.png "Deploying Application")
+![Deploying Application](../img/configuringB1.png "Deploying Application")
 
 The create a new RoleBonding, in order to grant *edit* access to openshift-gitops-argocd-application-controller Service Account to Petclinic namespace.
 
-![Deploying Application](/img/configuringB2.png "Deploying Application")
+![Deploying Application](../img/configuringB2.png "Deploying Application")
 
 Create the Role Binding with the next data:
 * Binding Type: Namespace Role Binding
