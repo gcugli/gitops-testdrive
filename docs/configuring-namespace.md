@@ -30,14 +30,14 @@ The create a new RoleBonding, in order to grant *edit* access to openshift-gitop
 
 Create the Role Binding with the next data:
 * Binding Type: Namespace Role Binding
-* Name: petclinic-gitops
-* Namespace: petclinic
+* Name: petclinic-gitops-userXY
+* Namespace: userXY-petclinic
 * Role: edit
 * Subject: Service Account
-* Subject Namespace: openshift-gitops
+* Subject Namespace: userXY
 * Subject Name: openshift-gitops-argocd-application-controller
 
-![Deploying Application](/img/configuringB3.png "Deploying Application")
+![Deploying Application](../img/configuringB3.png "Deploying Application")
 
 The RoleBinding is created and GitOps get access to modify the components on the project
 
