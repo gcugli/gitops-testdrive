@@ -18,12 +18,12 @@ In the login form clic in "Create a new account" link
 
 Next, fill the form with your user name, email (can be a fake one) and password. Then clic "Create a new account".
 
-<img src="../img/configuringC2.png" alt="New account form" width="50%" height="50%"/>
+<img src="../img/configuringC2.png" alt="New account form" width="90%" height="90%"/>
 
 
 Then, you are ready to login into GOGS and start using it.
 
-<img src="../img/configuringC3.png" alt="New account form" width="50%" height="50%"/>
+<img src="../img/configuringC3.png" alt="New account form" width="90%" height="90%"/>
 
 
 Once you are already logged in, we need to create the GIT repo that will be our "Source of Truth" and will contain all the configurations associated to our application.
@@ -32,7 +32,7 @@ In order to do that, we are going to clone/replicate an existing repo that alrea
 
 So first clic on the "Replica" tab in the upper right corner and then clic in the "+" button (will show the "New Replica" label as showed in the image bellow).
 
-<img src="../img/configuringC5.png" alt="Create a replica repo" width="50%" height="50%"/>
+<img src="../img/configuringC5.png" alt="Create a replica repo" width="90%" height="90%"/>
 
 
 Now we need to put the GIT URL that we want to clone and uncheck the "Migration type" option.
@@ -43,14 +43,14 @@ Set all the values like this:
 * Visibility: uncheck
 * Migration type: uncheck
 
-<img src="../img/configuringC6.png" alt="Create a replica repo" width="50%" height="50%"/>
+<img src="../img/configuringC6.png" alt="Create a replica repo" width="90%" height="90%"/>
 
 Then clic "Migrate Repository".
 
 
 You are done with this step. We now have a GIT repo that Openshift GitOps is going to use later.
 
-<img src="../img/configuringC7.png" alt="Repo view" width="50%" height="50%"/>
+<img src="../img/configuringC7.png" alt="Repo view" width="90%" height=90%"/>
 
 
 
