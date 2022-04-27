@@ -6,11 +6,11 @@ The goal in this section is navigate and deploy this applicaction on the cluster
 
 # Start ArgoCD Console
 
-Every user has his own ArgoCD cluster already deployed in a namespace called "userXY-openshift-gitops". In order to acess to the ArgoCD web console, go to Developer view > Select Topology from the left menu > Then select the Project userXY-openshift-gitops
+For this excercise, every user has his own ArgoCD server already deployed in a namespace called "userXY-openshift-gitops". In order to access to the ArgoCD web console and login, go to Developer view > Select Topology from the left menu > Then select the Project "userXY-openshift-gitops"
 
 ![Deploying Application](../img/installingC66.png "Deploying Application")
 
-Now click in the arrow next to the POD called "argo-server"
+Now click in the arrow next to the POD called "argo-server" to open the URL.
 
 ![Deploying Application](../img/installingC67.png "Deploying Application")
 
@@ -18,17 +18,17 @@ If your browser shows a security conection issue, please accept and proceed with
 
 ![Deploying Application](../img/installingC68.png "Deploying Application")
 
-The ArgoCD web console will be open now. 
 
+The ArgoCD web console will be open now. 
 
 ![Deploying Application](../img/installingC77.png "Deploying Application")
 
 
-We are going to access with the admin user in order to get see all the features that ArgoCD offers. So first we need to obtain the default admin password. In order to do so, fgo to the Openshift web console > Developer View > Secrets:
+We are going to access with the ArgoCD "admin" user in order to get all the features that ArgoCD offers. So first we need to obtain the default "admin" password. In order to do so, go to the Openshift Web Console > then "Developer View" > then select "Secrets" from the left menu:
 
 ![Deploying Application](../img/installingC78.png "Deploying Application")
 
-Click in the "argocd-initial-admin-secret" secret and then look at the "Data" section. There is a secret named "password" with a hidden value. Click in "Reveal values" link to reveal the password. Then take note of this password.
+Click in the "argocd-initial-admin-secret" secret and look at the "Data" section. There is a key with name "password" and has a hidden value. Click in "Reveal values" link in order to reveal the password. Then take note of this password.
 
 ![Deploying Application](../img/installingC78.png "Deploying Application")
 
