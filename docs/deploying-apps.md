@@ -62,7 +62,7 @@ Complete the source and destination
 * Cluster URL: https://kubernetes.default.svc
 * Namespace: petclinic
 
-![Deploying Application](../img/deployappsA3.png "Deploying Application")
+![Deploying Application](../img/deployappsA33.png "Deploying Application")
 
 Finally, maintain the values of Kustomize as the image
 
