@@ -4,3 +4,8 @@ kind: Kustomization
 bases:
   - 01-database
   - 02-app
+  
+configMapGenerator:
+  - name: arc-a-mapa-de-config
+    files:
+     - data.txt 
