@@ -30,7 +30,7 @@ We are going to access with the ArgoCD "admin" user in order to get all the feat
 
 Click in the "argocd-initial-admin-secret" secret and look at the "Data" section. There is a key with name "password" and has a hidden value. Click in "Reveal values" link in order to reveal the password. Then take note of this password.
 
-![Deploying Application](../img/installingC78.png "Deploying Application")
+![Deploying Application](../img/installingC79.png "Deploying Application")
 
 
 Return to the ArgoCD's login page and login with the "admin" user and enter the password. Verify that has access to ArgoCD console
