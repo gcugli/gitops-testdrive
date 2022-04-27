@@ -36,7 +36,7 @@ What happened with the application?
 
 ## Deploying changes from GitHub
 
-In this section go to adjust the application to you own Github repository and promote changes from the repository
+In this section go to adjust the application to you own Github / Gogs repository and promote changes from the repository
 
 Navigate to https://github.com/tgubeli/gitops-testdrive
 
