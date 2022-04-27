@@ -53,11 +53,11 @@ Complete the source and destination
 
 *Source*
 
-* Repository URL: <your-git-repo-url>/gitops-testdrive
+* Repository URL: [your-git-repo-url]/gitops-testdrive
 * Revision: HEAD
 * Path: petclinic-app/02-petclinic
 
-Example with GitHub: https://github.com/<your-username>/gitops-testdrive
+Example with GitHub: https://github.com/[your-username]/gitops-testdrive
 
 *Destination*
 
