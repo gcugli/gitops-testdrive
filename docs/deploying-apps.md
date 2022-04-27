@@ -1,21 +1,39 @@
 # Deploying a simple application on Cluster
 
-The application to deploy is PetClinic, this application is stored on 
-https://github.com/tgubeli/gitops-testdrive on petclinic-app/02-petclinic
+The application to deploy is PetClinic, this application is stored now in your GIT repo on the "petclinic-app/02-petclinic" path.
 
 The goal in this section is navigate and deploy this applicaction on the cluster.
 
 # Start ArgoCD Console
 
-Go to ArgoCD web console using Applications Menu from OpenShift
+Every user has his own ArgoCD cluster already deployed in a namespace called "userXY-openshift-gitops". In order to acess to the ArgoCD web console, go to Developer view > Select Topology from the left menu > Then select the Project userXY-openshift-gitops
 
-![Deploying Application](../img/installingC6.png "Deploying Application")
+![Deploying Application](../img/installingC66.png "Deploying Application")
 
-Logging using user admin and admin password or OpenShift Login
+Now click in the arrow next to the POD called "argo-server"
 
-![Deploying Application](../img/installingC7.png "Deploying Application")
+![Deploying Application](../img/installingC67.png "Deploying Application")
 
-Verify that has access to ArgoCD console
+If your browser shows a security conection issue, please accept and proceed with the URL (we install ArgoCD with a self-signed certificate).
+
+![Deploying Application](../img/installingC68.png "Deploying Application")
+
+The ArgoCD web console will be open now. 
+
+
+![Deploying Application](../img/installingC77.png "Deploying Application")
+
+
+We are going to access with the admin user in order to get see all the features that ArgoCD offers. So first we need to obtain the default admin password. In order to do so, fgo to the Openshift web console > Developer View > Secrets:
+
+![Deploying Application](../img/installingC78.png "Deploying Application")
+
+Click in the "argocd-initial-admin-secret" secret and then look at the "Data" section. There is a secret named "password" with a hidden value. Click in "Reveal values" link to reveal the password. Then take note of this password.
+
+![Deploying Application](../img/installingC78.png "Deploying Application")
+
+
+Return to the ArgoCD's login page and login with the "admin" user and enter the password. Verify that has access to ArgoCD console
 
 ![Deploying Application](../img/installingD3.png "Deploying Application")
 
@@ -35,9 +53,11 @@ Complete the source and destination
 
 *Source*
 
-* Repository URL: https://github.com/tgubeli/gitops-testdrive
+* Repository URL: <your-git-repo-url>/gitops-testdrive
 * Revision: HEAD
 * Path: petclinic-app/02-petclinic
+
+Example with GitHub: https://github.com/<your-username>/gitops-testdrive
 
 *Destination*
 
@@ -49,6 +69,7 @@ Complete the source and destination
 Finally, maintain the values of Kustomize as the image
 
 ![Deploying Application](../img/deployappsA4.png "Deploying Application")
+
 
 Select **Create** in the top of screen and wait to application Syncronize
 
@@ -62,7 +83,7 @@ Select Sync over the petclinc application and confirm default options
 
 ![Deploying Application](../img/deployappsA7.png "Deploying Application")
 
-When tha application is syncronized, go to OpenShift and explore the application
+When the application is syncronized, go to OpenShift and explore the application
 
 ![Deploying Application](../img/deployappsA8.png "Deploying Application")
 
