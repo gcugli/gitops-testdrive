@@ -79,7 +79,7 @@ The application is present on the main ArgoCD Main Screen
 
 Select Sync over the petclinc application and confirm default options
 
-![Deploying Application](../img/deployappsA7.png "Deploying Application")
+![Deploying Application](../img/deployappsA77.png "Deploying Application")
 
 When the application is syncronized, go to OpenShift and explore the application
 
