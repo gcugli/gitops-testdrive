@@ -60,7 +60,7 @@ Complete the source and destination
 *Destination*
 
 * Cluster URL: https://kubernetes.default.svc
-* Namespace: petclinic
+* Namespace: userXY-petclinic
 
 ![Deploying Application](../img/deployappsA33.png "Deploying Application")
 
