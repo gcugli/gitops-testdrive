@@ -75,7 +75,7 @@ Select **Create** in the top of screen and wait to application Syncronize
 
 The application is present on the main ArgoCD Main Screen
 
-![Deploying Application](../img/deployappsA5.png "Deploying Application")
+![Deploying Application](../img/deployappsA55.png "Deploying Application")
 
 Select Sync over the petclinc application and confirm default options
 
@@ -83,7 +83,7 @@ Select Sync over the petclinc application and confirm default options
 
 When the application is syncronized, go to OpenShift and explore the application
 
-![Deploying Application](../img/deployappsA8.png "Deploying Application")
+![Deploying Application](../img/deployappsA88.png "Deploying Application")
 
 On OpenShift go to Developer perspective and identify all objects created
 
